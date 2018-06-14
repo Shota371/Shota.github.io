@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body-form">	
+    <header class="main-header">
+       <button class="main-header__button"><span class="main-header__button-text">навигация</span><span class="main-header__button-span"></span></button>
+       <nav class="main-header__nav main-nav">
+         <a href="" class="main-nav__logo">
+            <picture>
+               <source media="(min-width: 1090px)"
+               srcset="img/header-logo-desktop.svg">
+               <source media="(min-width: 708px)"
+               srcset="img/header-logo-tablet.svg">
+               <img src="img/header-logo-mobile.svg" alt="логотип">
+           </picture>
+       </a>
+       <ul class="main-nav__site-nav hidden-to-desktop">
+        <li class="main-nav__site-item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__site-item"><a href="form.html">Вязание на заказ</a></li>
+        <li class=" main-nav__site-item main-nav__site-item--second-line only-hidden"><a href="">Новые поступления</a></li>
+        <li class="main-nav__site-item main-nav__site-item--second-line only-hidden"><a href="">Распродажа</a></li>
+    </ul>
+    <ul class="main-nav__user-nav hidden-to-tablet">
+        <li class="main-nav__user-item main-nav__user-item--search">
+           <a href="">
+              <svg width="20" height="20">
+                  <use xlink:href="#icon-search"></use>
+              </svg>
+              <span>Поиск по сайту</span>
+          </a>
+      </li>
+      <li class="main-nav__user-item main-nav__user-item--basket">
+       <a href="">
+          <svg width="20" height="20">
+             <use xlink:href="#icon-cart"></use>
+         </svg>
+         Корзина: пока пуста
+     </a>
+ </li>
+</ul>
+</nav>
+<div class="main-header__wrapper">
+    <div class="main-header__sec-nav-wrapper hidden-to-tablet">
+        <ul class="main-header__sec-nav sec-nav">
+            <li class="sec-nav__site-item sec-nav__site-item--first-line hidden-from-desktop"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--first-line hidden-from-desktop"><a href="form.html">Вязание на заказ</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--second-line hidden-to-desktop"><a href="">Новые поступления</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--second-line hidden-to-desktop"><a href="">Распродажа</a></li>
+        </ul>
+        <p class="sec-nav__user-item">Бесплатная доставка по России
+        </p>
+    </div>
+    <h1 class="main-header__title">Вязание на заказ
+    </h1>
+</div>
+</header>
+<main class="form-main">
+    <section class="form-desk">
+        <p class="form-desk__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    </section>
+    <section class="form-body">
+        <form action="" class="form-body__form">
+            <fieldset class="type">
+                <legend><span class="signature">ТИП</span></legend>
+                <ul role="none" class="type__list">
+                    <li class="type__item"><label class="type__label label"><input type="radio" class="visually-hidden" name="type" value="interier" checked><span class="radio-indicator label__span"></span>Аксессуар для интерьера</label></li>
+                    <li class="type__item"><label class="type__label label"><input type="radio" class="visually-hidden" name="type" value="mattel"><span class="radio-indicator label__span"></span>Детская игрушка</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="color">
+                <legend><span class="signature">ЦВЕТ</span></legend>
+                <ul role="none" class="color__list">
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value="" checked><span class="checkbox-indicator label__span"></span>Белый</label></li>
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value=""><span class="checkbox-indicator label__span"></span>Серый</label></li>
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value=""><span class="checkbox-indicator label__span"></span>"Тиффани"</label></li>
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value=""><span class="checkbox-indicator label__span"></span>Черный</label></li>
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value=""><span class="checkbox-indicator label__span"></span>Розовый</label></li>
+                    <li class="color__item"><label class="color__label label"><input type="checkbox" class="color__input visually-hidden" name="color" value=""><span class="checkbox-indicator label__span"></span>Оранжевый</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="name">
+                <legend><span class="signature">ФИО</span></legend>
+                <ul class="name__list" role="none">
+                    <li class="name__item"><label class="name__label">Имя:<input type="text" name="firstName" placeholder="  Введите ваше имя*" class="name__input input" required></label></li>
+                    <li class="name__item"><label class="name__label">Фамилия:<input type="text" name="secondName" placeholder="  Укажите фамилию*" class="name__input input" required></label></li>
+                    <li class="name__item"><label class="name__label">Отчество:<input type="text" name="farthersName" placeholder="  Отчество, если желаете" class="name__input input"></label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="contact">
+                <legend><span class="visually-hidden">контакты</span></legend>
+                <ul class="contact__list">
+                    <li class="contact__item"><label><span class="signature">ТЕЛ</span><div class="contact__input-wrapper"><input type="tel" name="phoneNamber" placeholder="  +7 xxx xx xx*" class="contact__input contact__input--phone input" required><svg class="contact__icon-phone" width="20" height="15"><use xlink:href="#icon-phone"></use></svg></div></label></li>
+                    <li class="contact__item"><label><span class="signature">E&#8209;MAIL</span><div class="contact__input-wrapper"><input type="email" name="mailadress" placeholder="  Ваш E-mail*" class="contact__input contact__input--mail input" required><svg class="contact__icon-mail" width="20" height="15"><use xlink:href="#icon-mail"></use></svg></div></label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="comments">
+                <legend><span class="visually-hidden">comments</span></legend>
+                <label><span class="signature">ДОП</span><textarea name="" id="" cols="" rows="10" type="text" placeholder="  Опишите все ваши пожелания к заказу" class="comments__textarea"></textarea></label>
+            </fieldset>
+            <div class="wrapper-button"><button class="form-body__button">отправить заказ</button><span class="form-body__rule">*Поля обязательны для заполнения</span></div>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__wrapper-logo-link">
+        <a class="footer__wrapper-logo">
+            <svg width="50" height="30" alt="" class="footer__logo">
+                <use xlink:href="#footer-logo"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="footer__wrapper-social social">
+        <span class="social__intro">мы в соцсетях</span>
+        <ul class="social__list">
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--instagramm"><use xlink:href="#icon-insta"></use></svg><span>инстаграмм</span></a></li>
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--facebook"><use xlink:href="#icon-fb"></use></svg><span>фейсбук</span></a></li>
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--twitter"><use xlink:href="#icon-twit"></use></svg><span>твиттер</span></a></li>
+        </ul>
+    </div>
+    <p class="footer__wrapper-represent"><span class="footer__represent">Разработано</span><a class="footer__acad-link"><svg width="20" height="30" alt="" class="footer__icon"><use xlink:href="#icon-acad"></use></svg></a></p>
+</footer>
+<script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "img/sprite-content.svg", true);
+    ajax.send();
+    ajax.onload = function(e) {
+        var div = document.createElement("div");
+        div.innerHTML = ajax.responseText;
+        div.style="display: none";
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+    document.addEventListener("DOMContentLoaded", ready);
+    function ready() {
+        var button = document.querySelector(".main-header__button");
+        var sitenav = document.body.querySelector(".main-nav__site-nav");
+        var usernav = document.body.querySelector(".main-nav__user-nav");
+        var siteitemlist = document.body.querySelectorAll(".main-nav__site-item--second-line");
+        button.addEventListener("click", onclick);
+        function onclick() {
+            sitenav.classList.toggle("hidden-to-desktop");
+            usernav.classList.toggle("hidden-to-tablet");
+            button.classList.toggle("close");
+            for (var i = 0; i < siteitemlist.length; i++) {
+                
+                siteitemlist[i].classList.toggle("only-hidden");
+            }
+        }
+    }   
+</script>
+</body>
+</html>

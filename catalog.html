@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>	
+    <header class="main-header">
+       <button class="main-header__button"><span class="main-header__button-text">навигация</span><span class="main-header__button-span"></button>
+          <nav class="main-header__nav main-nav">
+             <a href="" class="main-nav__logo">
+                <picture>
+                   <source media="(min-width: 1090px)"
+                   srcset="img/header-logo-desktop.svg">
+                   <source media="(min-width: 708px)"
+                   srcset="img/header-logo-tablet.svg">
+                   <img src="img/header-logo-mobile.svg" alt="логотип">
+               </picture>
+           </a>
+           <ul class="main-nav__site-nav hidden-to-desktop">
+            <li class="main-nav__site-item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__site-item"><a href="form.html">Вязание на заказ</a></li>
+            <li class=" main-nav__site-item main-nav__site-item--second-line only-hidden"><a href="">Новые поступления</a></li>
+            <li class="main-nav__site-item main-nav__site-item--second-line only-hidden"><a href="">Распродажа</a></li>
+        </ul>
+        <ul class="main-nav__user-nav hidden-to-tablet">
+            <li class="main-nav__user-item main-nav__user-item--search">
+               <a href="">
+                  <svg width="20" height="20">
+                      <use xlink:href="#icon-search"></use>
+                  </svg>
+                  <span>Поиск по сайту</span>
+              </a>
+          </li>
+          <li class="main-nav__user-item main-nav__user-item--basket">
+           <a href="">
+              <svg width="20" height="20">
+                 <use xlink:href="#icon-cart"></use>
+             </svg>
+             Корзина: пока пуста
+         </a>
+     </li>
+ </ul>
+</nav>
+<div class="main-header__wrapper">
+    <div class="main-header__sec-nav-wrapper hidden-to-tablet">
+        <ul class="main-header__sec-nav sec-nav">
+            <li class="sec-nav__site-item sec-nav__site-item--first-line hidden-from-desktop"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--first-line hidden-from-desktop"><a href="form.html">Вязание на заказ</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--second-line hidden-to-desktop"><a href="">Новые поступления</a></li>
+            <li class="sec-nav__site-item sec-nav__site-item--second-line hidden-to-desktop"><a href="">Распродажа</a></li>
+        </ul>
+        <p class="sec-nav__user-item">Бесплатная доставка по России
+        </p>
+    </div>
+    <h1 class="main-header__title">Каталог товаров
+    </h1>
+</div>
+</header>
+<main>
+    <section class="catalog-products">
+        <div class="catalog-products__wrapper">
+            <h2 class="catalog-products__title">в продаже</h2>
+            <ul class="catalog-products__list">
+                <li class="catalog-products__item catalog-item">
+                    <a href="" class="catalog-item__image">
+                        <picture>
+                            <source media="(min-width: 1090px)"
+                            srcset="img/catalog-desktop-photo-1.jpg 1x,
+                            img/catalog-desktop-photo-1@2.jpg">
+                            <source media="(min-width: 900px)"
+                            srcset="img/catalog-tablet-photo-1-w450.jpg 1x, img/catalog-tablet-photo-1-w900.jpg 2x">
+                            <source media="(min-width: 708px)"
+                            srcset="img/catalog-tablet-photo-1.jpg 1x,
+                            img/catalog-tablet-photo-1@2.jpg 2x">
+                            <source media="(min-width: 450px)" 
+                            srcset="img/catalog-mobile-photo-1-w400.jpg 1x, 
+                            img/catalog-mobile-photo-1-w800.jpg 2x">
+                            <img src="img/catalog-mobile-photo-1.jpg" 
+                            srcset="img/catalog-mobile-photo-1.jpg 1x, 
+                            img/catalog-mobile-photo-1@2.jpg 2x" alt="изделие-заяц">
+                        </picture>
+                    </a>
+                    <div class="catalog-item__wrapper-info">
+                        <h3 class="visually-hidden">Зайчик-попрыгайчик</h3>
+                        <a href="" class="catalog-item__title">Зайчик-попрыгайчик</a>
+                        <p class="catalog-item__desk">Рост 30 см, вес 200 г</p>
+                        <span class="catalog-item__price">
+                            1 200 руб.
+                            <a href="" class="catalog-item__link">
+                                <svg class="catalog-item__icon" width="20" height="20">    
+                                    <use xlink:href="#icon-cart"></use>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="catalog-products__item catalog-item">
+                    <a href="" class="catalog-item__image">
+                        <picture>
+                            <source media="(min-width: 1090px)"
+                            srcset="img/catalog-desktop-photo-2.jpg 1x,
+                            img/catalog-desktop-photo-2@2.jpg">
+                            <source media="(min-width: 900px)"
+                            srcset="img/catalog-tablet-photo-2-w450.jpg 1x, img/catalog-tablet-photo-2-w900.jpg 2x">
+                            <source media="(min-width: 708px)"
+                            srcset="img/catalog-tablet-photo-2.jpg 1x,
+                            img/catalog-tablet-photo-2@2.jpg 2x">
+                            <source media="(min-width: 450px)" 
+                            srcset="img/catalog-mobile-photo-2-w400.jpg 1x, 
+                            img/catalog-mobile-photo-2-w800.jpg 2x">
+                            <img src="img/catalog-mobile-photo-2.jpg" 
+                            srcset="img/catalog-mobile-photo-2.jpg 1x, 
+                            img/catalog-mobile-photo-2@2.jpg 2x" alt="изделие-корзинка">
+                        </picture>
+                    </a>
+                    <div class="catalog-item__wrapper-info">
+                        <h3 class="visually-hidden">Корзинка для белья</h3>
+                        <a href="" class="catalog-item__title">Корзинка для белья</a>
+                        <p class="catalog-item__desk">Диаметр 15 см, высота 10 см</p>
+                        <span class="catalog-item__price">
+                            690 руб.
+                            <a class="catalog-item__link">
+                                <svg class="catalog-item__icon" width="20" height="20">    
+                                    <use xlink:href="#icon-cart"></use>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="catalog-products__item catalog-item">
+                    <a href="" class="catalog-item__image">
+                        <picture>
+                            <source media="(min-width: 1090px)"
+                            srcset="img/catalog-desktop-photo-3.jpg 1x,
+                            img/catalog-desktop-photo-3@2.jpg">
+                            <source media="(min-width: 900px)"
+                            srcset="img/catalog-tablet-photo-3-w450.jpg 1x, img/catalog-tablet-photo-3-w900.jpg 2x">
+                            <source media="(min-width: 708px)"
+                            srcset="img/catalog-tablet-photo-3.jpg 1x,
+                            img/catalog-tablet-photo-3@2.jpg 2x">
+                            <source media="(min-width: 450px)" 
+                            srcset="img/catalog-mobile-photo-3-w400.jpg 1x, 
+                            img/catalog-mobile-photo-3-w800.jpg 2x">
+                            <img src="img/catalog-mobile-photo-3.jpg" 
+                            srcset="img/catalog-mobile-photo-3.jpg 1x, 
+                            img/catalog-mobile-photo-3@2.jpg 2x" alt="изделие-большая-корзинка">
+                        </picture>
+                    </a>
+                    <div class="catalog-item__wrapper-info">
+                        <h3 class="visually-hidden">Большая корзинка для игрушек</h3>
+                        <a href="" class="catalog-item__title">Большая корзинка для игрушек</a>
+                        <p class="catalog-item__desk">Диаметр 30 см, высота 30 см</p>
+                        <span class="catalog-item__price">
+                            1 500 руб.
+                            <a href="" class="catalog-item__link">
+                                <svg class="catalog-item__icon" width="20" height="20">    
+                                    <use xlink:href="#icon-cart"></use>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="catalog-video">
+        <div class="catalog-video__wrapper">
+            <div class="catalog-video__header-wrapper catalog-video__header-wrapper--outer hidden-from-tablet">
+                <svg class="catalog-icon-movie">
+                    <use xlink:href="#icon-video"></use>
+                </svg>
+                <h2 class="catalog-video__title">Процесс <br>производства</h2>
+            </div>
+            <div class="catalog-video__image-wrapper">
+                <picture>
+                    <source media="(min-width: 1090px)"
+                    srcset="img/catalog-desktop-video.jpg 1x,
+                    img/catalog-desktop-video@2.jpg">
+                    <source media="(min-width: 900px)"
+                    srcset="img/catalog-tablet-video-w900.jpg 1x, img/catalog-tablet-video-w1800.jpg 2x">
+                    <source media="(min-width: 708px)"
+                    srcset="img/catalog-tablet-video.jpg 1x,
+                    img/catalog-tablet-video@2.jpg 2x">
+                    <source media="(min-width: 450px)" 
+                    srcset="img/catalog-mobile-video-w400.jpg 1x, 
+                    img/catalog-mobile-video-w800.jpg 2x">
+                    <img src="img/catalog-mobile-video.jpg" 
+                    srcset="img/catalog-mobile-video.jpg 1x, 
+                    img/catalog-mobile-video@2.jpg 2x" alt="изделие-большая-корзинка">
+                </picture>
+                <a href="" class="catalog-video__link">
+                    <svg class="catalog-icon-video" width="104" height="80">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="catalog-video__info-wrapper">
+                <div class="catalog-video__header-wrapper catalog-video__header-wrapper--inner hidden-to-tablet">
+                    <svg class="catalog-icon-movie" width="40" height="20">
+                        <use xlink:href="#icon-video"></use>
+                    </svg>
+                    <b class="catalog-video__title">Процесс <br class="hidden-to-desktop">производства</b>
+                </div>
+                <p class="catalog-video__desk">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <button class="catalog-video__button">сделать заказ</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__wrapper-logo-link">
+        <a class="footer__wrapper-logo">
+            <svg width="50" height="30" alt="" class="footer__logo">
+                <use xlink:href="#footer-logo"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="footer__wrapper-social social">
+        <span class="social__intro">мы в соцсетях</span>
+        <ul class="social__list">
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--instagramm"><use xlink:href="#icon-insta"></use></svg><span>инстаграмм</span></a></li>
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--facebook"><use xlink:href="#icon-fb"></use></svg><span>фейсбук</span></a></li>
+            <li><a href="" class="social__link"><svg width="20" height="30" alt="" class="social__icon social__icon--twitter"><use xlink:href="#icon-twit"></use></svg><span>твиттер</span></a></li>
+        </ul>
+    </div>
+    <hr class="footer__line">
+    <p class="footer__wrapper-represent"><span class="footer__represent">Разработано</span><a class="footer__acad-link"><svg width="20" height="30" alt="" class="footer__icon"><use xlink:href="#icon-acad"></use></svg></a></p>
+</footer>
+<script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "img/sprite-content.svg", true);
+    ajax.send();
+    ajax.onload = function(e) {
+        var div = document.createElement("div");
+        div.innerHTML = ajax.responseText;
+        div.style="display: none";
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+    document.addEventListener("DOMContentLoaded", ready);
+    function ready() {
+        var button = document.querySelector(".main-header__button");
+        var sitenav = document.body.querySelector(".main-nav__site-nav");
+        var usernav = document.body.querySelector(".main-nav__user-nav");
+        var siteitemlist = document.body.querySelectorAll(".main-nav__site-item--second-line");
+        button.addEventListener("click", onclick);
+        function onclick() {
+            sitenav.classList.toggle("hidden-to-desktop");
+            usernav.classList.toggle("hidden-to-tablet");
+            button.classList.toggle("close");
+            for (var i = 0; i < siteitemlist.length; i++) {
+                
+                siteitemlist[i].classList.toggle("only-hidden");
+            }
+        }
+    }   
+</script>
+</body>
+</html>
