@@ -1,0 +1,225 @@
+.digital {
+	background-color: #fff;
+	&__images-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	&__bigger-image-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+	}
+	&__bigger-image {
+		width: 100%;
+		& img {
+			width: 100%;
+		}
+	}
+	&__bigger-desc {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&__bigger-label {
+		position: relative;
+		top: -16px;
+		display: inline-block;
+		padding: 5px;
+		margin-bottom: 6px;
+		font-family: 'RobotoCondensed-Bold';
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: #4c6269;
+	}
+	&__bigger-text {
+		margin: 0px;
+		font-family: 'ClearSans-Light';
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 300;
+		color: #262628;
+	}
+	&__smaller-image-wrapper {
+         width: 100%;
+        background-color: #fff;
+	}
+	&__smaller-image {
+        width: 100%;
+        & img {
+        	width: 100%;
+        }
+	}
+	&__smaller-desc {
+        padding-left: 20px;
+		padding-right: 20px;
+	}
+	&__smaller-label {
+        position: relative;
+		top: -16px;
+		display: inline-block;
+		padding: 5px;
+		margin-bottom: 6px;
+		font-family: 'RobotoCondensed-Bold';
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: #4c6269;
+	}
+	&__smaller-text {
+		margin: 0px;
+        font-family: 'ClearSans-Light';
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 300;
+		color: #262628;
+	}
+}
+
+.desc {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	&__header {
+		font-family: 'RobotoCondensed-BoldItalic';
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 39px;
+		color: red;
+	}
+	&__link-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__link {
+		width: 40px;
+		height: 40px;
+		background-color: red;
+	}
+	&__span {
+		margin-left: 20px;
+        font-family: 'RobotoCondensed-Bold';
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #000;
+	}
+}
+
+@media (min-width: $tablet) {
+	.digital {
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: red;
+		}
+		&__desc {
+			flex-basis: 100%;
+		}
+		&__images-wrapper {
+			display: flex;
+		}
+		&__bigger-image-wrapper {
+			flex-basis: calc(50% - 10px);
+			width: auto;
+			margin-right: 10px;
+		}
+		&__smaller-image-wrapper {
+			margin-bottom: 20px;
+			width: auto;
+			flex-basis: calc(50% - 10px);
+			margin-left: 10px;
+		}
+	}
+
+	.desc {
+		&__header {
+			color: #fff;
+		}
+		&__text {
+			color: #fff;
+		}
+		&__link {
+			background-color: #fff;
+		}
+		&__span {
+			color: #fff;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.digital {
+		&__wrapper {
+			flex-wrap: nowrap;
+			background-color: #fff;
+		}
+		&__desc {
+			flex-basis: 40%;
+		}
+		&__images-wrapper {
+			flex-basis: 60%;
+		}
+		&__bigger-image-wrapper {
+            flex-basis: calc(70% - 10px);
+            display: flex;
+            margin-bottom: 0px;
+            flex-direction: column;
+		}
+		&__bigger-desc {
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+		}
+		&__bigger-label {
+			align-self: flex-start;
+		}
+		&__bigger-text {
+			margin-top: auto;
+		}
+		&__smaller-image-wrapper {
+			margin-bottom: 0px;
+			flex-basis: calc(30% - 10px);
+			display: flex;
+			flex-direction: column;
+		}
+		&__smaller-desc {
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+		}
+		&__smaller-label {
+			align-self: flex-start;
+		}
+		&__smaller-text {
+			margin-top: auto;
+		}
+	}
+
+	.desc {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+        &__header {
+        	margin-bottom: 20px;
+        	color: red;
+        }
+        &__text {
+        	color: #262628;
+        }
+        &__link-wrapper {
+        	margin-top: auto;
+        }
+        &__link {
+        	background-color: red;
+        }
+        &__span {
+        	color: #000;
+        }
+	}
+}

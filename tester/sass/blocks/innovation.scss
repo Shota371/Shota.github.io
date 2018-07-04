@@ -1,0 +1,121 @@
+.innovation {
+	&__wrapper {
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100%;
+		background-color: #4c6269;
+	}
+	&__text {
+		position: absolute;
+		left: 20px;
+		bottom: 44px;
+	}
+	&__title {
+		margin: 0px;
+		font-family: 'RobotoCondensed-BoldItalic';
+		font-size: 36px;
+		line-height: 39px;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__image {
+		width: 100%;
+		height: auto;
+		box-shadow:  0 30px 30px rgba(0, 0, 0, 0.3);
+		& img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+	.innovation {
+		&__desc {
+			display: none;
+		}
+		&__wrapper-link {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.innovation {
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+            padding-bottom: 0px;
+		}
+        &__text {
+        	position: relative;
+        	padding-top: 40px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        	order: 2;
+        }
+        &__title {
+            margin-top: 20px;
+        	margin-bottom: 20px;
+        }
+        &__desc {
+        	margin-bottom: 30px;
+        	font-family: 'ClearSans-Light';
+        	font-size: 13px;
+        	line-height: 22px;
+        	font-weight: 300;
+        	color: #fff;
+        }
+        &__wrapper-link {
+        	display: flex;
+        	align-items: center;
+        }
+        &__link {
+        	padding: 16px;
+        	background-color: #fff;
+        	& svg {
+        		width: 18px;
+        		height: 18px;
+        	}
+        }
+        &__span {
+        	margin-left: 20px;
+        	font-family: 'RobotoCondensed-Bold';
+        	font-size: 12px;
+        	line-height: 18px;
+        	font-weight: 700;
+        	text-transform: uppercase;
+        	color: #fff;
+        }
+        &__image {
+        	order: 1;
+        }
+	}
+}
+
+@media (min-width: $desktop) {
+	.innovation {
+		&__wrapper {
+			flex-wrap: nowrap;
+		}
+        &__text {
+        	flex-basis: 42%;
+            display: flex;
+            flex-direction: column;
+        	order: 1;
+        	padding-left: 65px;
+        	padding-right: 65px;
+        }
+        &__title {
+        	margin-top: 20px;
+        }
+        &__image {
+            flex-basis: 58%;
+        	position: relative;
+        	top: 60px;
+        	order: 2;
+        	box-shadow: none;
+        }
+	}
+}
