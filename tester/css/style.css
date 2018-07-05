@@ -134,6 +134,7 @@ img {
     display: flex;
     flex-direction: column;
     order: 1;
+    padding-top: 0px;
     padding-left: 65px;
     padding-right: 65px; }
   .innovation__title {
@@ -344,6 +345,7 @@ img {
   .digital__desc {
     flex-basis: 100%; }
   .digital__images-wrapper {
+    background: none;
     display: flex; }
   .digital__bigger-image-wrapper {
     flex-basis: calc(50% - 10px);
@@ -372,7 +374,7 @@ img {
   .digital__images-wrapper {
     flex-basis: 60%; }
   .digital__bigger-image-wrapper {
-    flex-basis: calc(70% - 10px);
+    flex-basis: calc(67% - 10px);
     display: flex;
     margin-bottom: 0px;
     flex-direction: column; }
@@ -386,7 +388,7 @@ img {
     margin-top: auto; }
   .digital__smaller-image-wrapper {
     margin-bottom: 0px;
-    flex-basis: calc(30% - 10px);
+    flex-basis: calc(33% - 10px);
     display: flex;
     flex-direction: column; }
   .digital__smaller-desc {
